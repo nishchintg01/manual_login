@@ -1,0 +1,99 @@
+<div class="container mt-4">
+<%= render 'navbar' %>
+
+<div class="mt-4" >
+<div class="layout-content">
+
+          <!-- Content -->
+          <div class="flex-grow-1">
+            <!-- Header -->
+            <div class="theme-bg-white mb-4">
+              <div class="media col-md-10 col-lg-8 col-xl-7 py-5 mx-auto">
+                <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" class="d-block ui-w-100 rounded-circle">
+                <div class="media-body ml-5">
+                  <h4 class="font-weight-bold mb-4"><%= @user_data.first_name%> <%= @user_data.last_name%></h4>
+
+                  <div class="text-muted mb-4">
+                    <%= @user_data.email %>
+                  </div>
+                </div>
+              </div>
+              <hr class="m-0">
+            </div>
+            <!-- Header -->
+
+            <div class="row" >
+              <div class="col" >
+
+                <!-- Info -->
+                <div class="card mb-4">
+                  <div class="card-body">
+
+                    <div class="row mb-2">
+                      <div class="col-md-3 text-muted">First Name:</div>
+                      <div class="col-md-9">
+                        <a href="javascript:void(0)" class="text-body"><%= @user_data.first_name %> </a>
+                      </div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-md-3 text-muted">Last Name:</div>
+                      <div class="col-md-9">
+                        <a href="javascript:void(0)" class="text-body"><%= @user_data.last_name %> </a>
+                      </div>
+                    </div>
+                    <div class="row mb-2">
+                      <div class="col-md-3 text-muted">Birthday:</div>
+                      <div class="col-md-9">
+                        <%= @user_data.date_of_birth %>
+                      </div>
+                    </div>
+    
+                    <h6 class="my-3">Contacts</h6>
+
+                    <div class="row mb-2">
+                      <div class="col-md-3 text-muted">Phone:</div>
+                      <div class="col-md-9">
+                        <%= @user_data.mobile %>
+                      </div>
+                    </div>
+
+                  </div>
+                
+                </div>
+                <!-- / Info -->
+
+              </div>
+              <div class="col-xl-4">
+
+                <!-- Side info -->
+                <div class="card" >
+                  <hr class="border-light m-0">
+                  <div class="card-body">
+                    <p class="mb-2">
+                      <i class="ion ion-md-desktop ui-w-30 text-center text-lighter"></i><%= @user_data.email %> </p>
+                    <p class="mb-2">
+                      <i class="ion ion-ios-navigate ui-w-30 text-center text-lighter"></i> <%= @user_data.mobile %></p>
+                    
+                  </div>
+                  <hr class="border-light m-0">
+                  <div class="card-body">
+                    <a href="javascript:void(0)" class="d-block text-body mb-2">
+                      <i class="ion ion-logo-twitter ui-w-30 text-center text-twitter"></i> @github.com
+                    </a>
+                    <a href="javascript:void(0)" class="d-block text-body mb-2">
+                      <i class="ion ion-logo-facebook ui-w-30 text-center text-facebook"></i> @twitter.com
+                    </a>
+                    <a href="javascript:void(0)" class="d-block text-body mb-0">
+                      <i class="ion ion-logo-instagram ui-w-30 text-center text-instagram"></i> @facebook.com
+                    </a>
+                  </div>
+                </div>
+                <!-- / Side info -->
+
+              </div>
+            </div>
+
+          </div>
+          <!-- / Content -->
+</div>
+</div>
